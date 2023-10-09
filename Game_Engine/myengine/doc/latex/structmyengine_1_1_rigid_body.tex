@@ -1,0 +1,123 @@
+\hypertarget{structmyengine_1_1_rigid_body}{}\doxysection{myengine\+::Rigid\+Body Struct Reference}
+\label{structmyengine_1_1_rigid_body}\index{myengine::RigidBody@{myengine::RigidBody}}
+
+
+{\ttfamily \#include $<$Rigid\+Body.\+h$>$}
+
+Inheritance diagram for myengine\+::Rigid\+Body\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structmyengine_1_1_rigid_body}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structmyengine_1_1_rigid_body_a8dd62902e32225a961a51e15e5453802}{Rigid\+Body}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_rigid_body_a1ddd0e52579773c05e100330f7f54bda}{initialize}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_rigid_body_aeb17f68894c40999782e4f53544a4f55}{set\+Mass}} (float \+\_\+mass)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_rigid_body_abd22ade4563fdef16db6d0390f1ebc4a}{add\+Impulse}} (glm\+::vec3 \+\_\+impulse)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_rigid_body_a467d051e1b40e3c70b54c38a76126d5f}{add\+Force}} (glm\+::vec3 \+\_\+force)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_rigid_body_ad5f5d0c2724e54adb752e7536faa138e}{freeze\+Position\+Axis}} (glm\+::vec3 \+\_\+axis)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_rigid_body_a41f13302963ae1ab36cdc93a59a975b8}{freeze\+Angular\+Axis}} (glm\+::vec3 \+\_\+axis)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_rigid_body_a7224992681705b8aeeda41d25c2e67e6}{on\+Tick}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{structmyengine_1_1_component}{myengine\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_af409385720cc0c533e8812e8857ba161}{get\+Entity}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_core}{Core}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a2b80c2d91dac8f429f6b6f6305d7c5be}{get\+Core}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_enviroment}{Enviroment}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a3b00191c809640c8c6ab526b2c946079}{get\+Enviroment}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_keyboard}{Keyboard}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a86618ca85aca087c0efa99970b5e095a}{get\+Keyboard}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_physics}{Physics}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a83297e0637f1590cdbc7c77e68e94183}{get\+Physics}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_camera}{Camera}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a3c4a94098f91b2602ce73a81d0bc9570}{get\+Camera}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structmyengine_1_1_component}{Component}} provides the physics for the \mbox{\hyperlink{structmyengine_1_1_entity}{Entity}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_rigid_body_a8dd62902e32225a961a51e15e5453802}\label{structmyengine_1_1_rigid_body_a8dd62902e32225a961a51e15e5453802}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!RigidBody@{RigidBody}}
+\index{RigidBody@{RigidBody}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{RigidBody()}{RigidBody()}}
+{\footnotesize\ttfamily myengine\+::\+Rigid\+Body\+::\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_rigid_body_a467d051e1b40e3c70b54c38a76126d5f}\label{structmyengine_1_1_rigid_body_a467d051e1b40e3c70b54c38a76126d5f}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!addForce@{addForce}}
+\index{addForce@{addForce}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addForce()}{addForce()}}
+{\footnotesize\ttfamily void myengine\+::\+Rigid\+Body\+::add\+Force (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+force }\end{DoxyParamCaption})}
+
+add\+Force adds force physics to rigidbody 
+\begin{DoxyParams}{Parameters}
+{\em amount} & being pushed by \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structmyengine_1_1_rigid_body_abd22ade4563fdef16db6d0390f1ebc4a}\label{structmyengine_1_1_rigid_body_abd22ade4563fdef16db6d0390f1ebc4a}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!addImpulse@{addImpulse}}
+\index{addImpulse@{addImpulse}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addImpulse()}{addImpulse()}}
+{\footnotesize\ttfamily void myengine\+::\+Rigid\+Body\+::add\+Impulse (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+impulse }\end{DoxyParamCaption})}
+
+add\+Impulse adds impulse physics to rigidbody 
+\begin{DoxyParams}{Parameters}
+{\em amount} & being pushed by \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structmyengine_1_1_rigid_body_a41f13302963ae1ab36cdc93a59a975b8}\label{structmyengine_1_1_rigid_body_a41f13302963ae1ab36cdc93a59a975b8}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!freezeAngularAxis@{freezeAngularAxis}}
+\index{freezeAngularAxis@{freezeAngularAxis}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{freezeAngularAxis()}{freezeAngularAxis()}}
+{\footnotesize\ttfamily void myengine\+::\+Rigid\+Body\+::freeze\+Angular\+Axis (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+freeze\+Angular\+Axis is to freeze a perticular rotational axis from being used with the rigidbody \mbox{\Hypertarget{structmyengine_1_1_rigid_body_ad5f5d0c2724e54adb752e7536faa138e}\label{structmyengine_1_1_rigid_body_ad5f5d0c2724e54adb752e7536faa138e}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!freezePositionAxis@{freezePositionAxis}}
+\index{freezePositionAxis@{freezePositionAxis}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{freezePositionAxis()}{freezePositionAxis()}}
+{\footnotesize\ttfamily void myengine\+::\+Rigid\+Body\+::freeze\+Position\+Axis (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+freeze\+Position\+Axis is to freeze a perticular movement axis from being used with the rigidbody \mbox{\Hypertarget{structmyengine_1_1_rigid_body_a1ddd0e52579773c05e100330f7f54bda}\label{structmyengine_1_1_rigid_body_a1ddd0e52579773c05e100330f7f54bda}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!initialize@{initialize}}
+\index{initialize@{initialize}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void myengine\+::\+Rigid\+Body\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+initialize is called after creation to initialize rigidbody \mbox{\Hypertarget{structmyengine_1_1_rigid_body_a7224992681705b8aeeda41d25c2e67e6}\label{structmyengine_1_1_rigid_body_a7224992681705b8aeeda41d25c2e67e6}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!onTick@{onTick}}
+\index{onTick@{onTick}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{onTick()}{onTick()}}
+{\footnotesize\ttfamily void myengine\+::\+Rigid\+Body\+::on\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+on\+Tick Update function 
+
+Reimplemented from \mbox{\hyperlink{structmyengine_1_1_component}{myengine\+::\+Component}}.
+
+\mbox{\Hypertarget{structmyengine_1_1_rigid_body_aeb17f68894c40999782e4f53544a4f55}\label{structmyengine_1_1_rigid_body_aeb17f68894c40999782e4f53544a4f55}} 
+\index{myengine::RigidBody@{myengine::RigidBody}!setMass@{setMass}}
+\index{setMass@{setMass}!myengine::RigidBody@{myengine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setMass()}{setMass()}}
+{\footnotesize\ttfamily void myengine\+::\+Rigid\+Body\+::set\+Mass (\begin{DoxyParamCaption}\item[{float}]{\+\_\+mass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/myengine/\mbox{\hyperlink{_rigid_body_8h}{Rigid\+Body.\+h}}\item 
+src/myengine/\mbox{\hyperlink{_rigid_body_8cpp}{Rigid\+Body.\+cpp}}\end{DoxyCompactItemize}

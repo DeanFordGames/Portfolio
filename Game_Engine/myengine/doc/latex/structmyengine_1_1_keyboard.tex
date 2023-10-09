@@ -1,0 +1,111 @@
+\hypertarget{structmyengine_1_1_keyboard}{}\doxysection{myengine\+::Keyboard Struct Reference}
+\label{structmyengine_1_1_keyboard}\index{myengine::Keyboard@{myengine::Keyboard}}
+
+
+{\ttfamily \#include $<$Keyboard.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structmyengine_1_1_keyboard_a6c15b5286e35c07276b09f162c078e46}{Keyboard}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_keyboard_af4babde3eb1df7cf9e3067052ea0296b}{set\+Key\+Down}} (int \+\_\+key)
+\item 
+bool \mbox{\hyperlink{structmyengine_1_1_keyboard_a65e26eb3989a6a677a7bd2ead4381e0c}{get\+Key\+Down}} (\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83}{Key\+Codes}} \+\_\+key\+Code)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_keyboard_a8c1a66396df0e4af462fc4ae9d962e15}{set\+Key\+Up}} (int \+\_\+key)
+\item 
+bool \mbox{\hyperlink{structmyengine_1_1_keyboard_a57a86537b0750a973ddcd2ccf4477c85}{get\+Key\+Up}} (\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83}{Key\+Codes}} \+\_\+key\+Code)
+\item 
+bool \mbox{\hyperlink{structmyengine_1_1_keyboard_a8cb4e2126ba31d3c331f67141abbb06f}{get\+Key}} (\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83}{Key\+Codes}} \+\_\+key\+Code)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_keyboard_a5fb48f5b5ad7c7a40d2eccd132d3ebd6}{set\+Mouse\+Movement}} (float \+\_\+x, float \+\_\+y)
+\item 
+float \mbox{\hyperlink{structmyengine_1_1_keyboard_ae302ad37927a853c0a97b6ae36135ba0}{get\+MouseX}} ()
+\item 
+float \mbox{\hyperlink{structmyengine_1_1_keyboard_ab09b8a11bd6c55f20d27fe1255431038}{get\+MouseY}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_keyboard_a6c15b5286e35c07276b09f162c078e46}\label{structmyengine_1_1_keyboard_a6c15b5286e35c07276b09f162c078e46}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{Keyboard()}{Keyboard()}}
+{\footnotesize\ttfamily myengine\+::\+Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_keyboard_a8cb4e2126ba31d3c331f67141abbb06f}\label{structmyengine_1_1_keyboard_a8cb4e2126ba31d3c331f67141abbb06f}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!getKey@{getKey}}
+\index{getKey@{getKey}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool myengine\+::\+Keyboard\+::get\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83}{Key\+Codes}}}]{\+\_\+key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get\+Key returns a keycode if its true or false 
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false if key is pressed down 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structmyengine_1_1_keyboard_a65e26eb3989a6a677a7bd2ead4381e0c}\label{structmyengine_1_1_keyboard_a65e26eb3989a6a677a7bd2ead4381e0c}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!getKeyDown@{getKeyDown}}
+\index{getKeyDown@{getKeyDown}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{getKeyDown()}{getKeyDown()}}
+{\footnotesize\ttfamily bool myengine\+::\+Keyboard\+::get\+Key\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83}{Key\+Codes}}}]{\+\_\+key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_keyboard_a57a86537b0750a973ddcd2ccf4477c85}\label{structmyengine_1_1_keyboard_a57a86537b0750a973ddcd2ccf4477c85}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!getKeyUp@{getKeyUp}}
+\index{getKeyUp@{getKeyUp}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{getKeyUp()}{getKeyUp()}}
+{\footnotesize\ttfamily bool myengine\+::\+Keyboard\+::get\+Key\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83}{Key\+Codes}}}]{\+\_\+key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_keyboard_ae302ad37927a853c0a97b6ae36135ba0}\label{structmyengine_1_1_keyboard_ae302ad37927a853c0a97b6ae36135ba0}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!getMouseX@{getMouseX}}
+\index{getMouseX@{getMouseX}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{getMouseX()}{getMouseX()}}
+{\footnotesize\ttfamily float myengine\+::\+Keyboard\+::get\+MouseX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get\+MouseX returns mouseX and resets to zero to not give multiple of the same input \mbox{\Hypertarget{structmyengine_1_1_keyboard_ab09b8a11bd6c55f20d27fe1255431038}\label{structmyengine_1_1_keyboard_ab09b8a11bd6c55f20d27fe1255431038}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!getMouseY@{getMouseY}}
+\index{getMouseY@{getMouseY}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{getMouseY()}{getMouseY()}}
+{\footnotesize\ttfamily float myengine\+::\+Keyboard\+::get\+MouseY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get\+MouseY returns mouseY and resets to zero to not give multiple of the same input \mbox{\Hypertarget{structmyengine_1_1_keyboard_af4babde3eb1df7cf9e3067052ea0296b}\label{structmyengine_1_1_keyboard_af4babde3eb1df7cf9e3067052ea0296b}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!setKeyDown@{setKeyDown}}
+\index{setKeyDown@{setKeyDown}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{setKeyDown()}{setKeyDown()}}
+{\footnotesize\ttfamily void myengine\+::\+Keyboard\+::set\+Key\+Down (\begin{DoxyParamCaption}\item[{int}]{\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get\+Key\+Down set key as down 
+\begin{DoxyParams}{Parameters}
+{\em key} & keycode for what key has been pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structmyengine_1_1_keyboard_a8c1a66396df0e4af462fc4ae9d962e15}\label{structmyengine_1_1_keyboard_a8c1a66396df0e4af462fc4ae9d962e15}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!setKeyUp@{setKeyUp}}
+\index{setKeyUp@{setKeyUp}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{setKeyUp()}{setKeyUp()}}
+{\footnotesize\ttfamily void myengine\+::\+Keyboard\+::set\+Key\+Up (\begin{DoxyParamCaption}\item[{int}]{\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get\+Key\+Up set key as up 
+\begin{DoxyParams}{Parameters}
+{\em key} & keycode for what key has been pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structmyengine_1_1_keyboard_a5fb48f5b5ad7c7a40d2eccd132d3ebd6}\label{structmyengine_1_1_keyboard_a5fb48f5b5ad7c7a40d2eccd132d3ebd6}} 
+\index{myengine::Keyboard@{myengine::Keyboard}!setMouseMovement@{setMouseMovement}}
+\index{setMouseMovement@{setMouseMovement}!myengine::Keyboard@{myengine::Keyboard}}
+\doxysubsubsection{\texorpdfstring{setMouseMovement()}{setMouseMovement()}}
+{\footnotesize\ttfamily void myengine\+::\+Keyboard\+::set\+Mouse\+Movement (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x,  }\item[{float}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/myengine/\mbox{\hyperlink{_keyboard_8h}{Keyboard.\+h}}\item 
+src/myengine/\mbox{\hyperlink{_keyboard_8cpp}{Keyboard.\+cpp}}\end{DoxyCompactItemize}

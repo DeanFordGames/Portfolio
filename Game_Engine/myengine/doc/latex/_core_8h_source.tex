@@ -1,0 +1,84 @@
+\hypertarget{_core_8h_source}{}\doxysection{Core.\+h}
+\label{_core_8h_source}\index{src/myengine/Core.h@{src/myengine/Core.h}}
+\mbox{\hyperlink{_core_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MYENGINE\_CORE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MYENGINE\_CORE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <AL/al.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <AL/alc.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_keyboard_8h}{Keyboard.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_enviroment_8h}{Enviroment.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_resources_8h}{Resources.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_physics_8h}{Physics.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_camera_8h}{Camera.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <rend/rend.h>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ INITIAL\_HEIGHT\ 480}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ INITIAL\_WIDTH\ 640}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{struct\ }Entity;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_core}{Core}}}
+\DoxyCodeLine{00028\ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::shared\_ptr<Core>\ \mbox{\hyperlink{structmyengine_1_1_core_a60646236bab8f92a381ce2d43806e813}{initialize}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_core_af8293765bd17b1e0003df3820fa38990}{\string~Core}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_core_ad30b81f4e6ca3cc018e6c529904fdb3f}{start}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_core_a4f1818b9d6fbf66e8c3b246fa1f2d965}{stop}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ std::shared\_ptr<Entity>\ \mbox{\hyperlink{structmyengine_1_1_core_abf2eea4d6b0d3788761ea11f34c4981d}{addEntity}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ std::shared\_ptr<Enviroment>\ \mbox{\hyperlink{structmyengine_1_1_core_a3bef279fdb2842acd3b0e449c3c4d8da}{getEnviroment}}()\ \{\ \textcolor{keywordflow}{return}\ m\_enviroment;\ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ std::shared\_ptr<Keyboard>\ \mbox{\hyperlink{structmyengine_1_1_core_a22ca571e0c193c5710a6a4432273131f}{getKeyboard}}()\ \{\ \textcolor{keywordflow}{return}\ m\_keyboard;\ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::shared\_ptr<Resources>\ \mbox{\hyperlink{structmyengine_1_1_core_a82f9fc96dd0d9cb9fd29c0aa7cf83c45}{getResources}}()\ \{\ \textcolor{keywordflow}{return}\ m\_resources;\ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::shared\_ptr<Physics>\ \mbox{\hyperlink{structmyengine_1_1_core_af47090e017a06e967785005c5e860770}{getPhysics}}()\ \{\ \textcolor{keywordflow}{return}\ m\_physics;\ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ std::shared\_ptr<Camera>\ \mbox{\hyperlink{structmyengine_1_1_core_ade0a9332e189c2afa521604c3db791c3}{getCamera}}()\ \{\ \textcolor{keywordflow}{return}\ m\_camera;\ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_core_a2c15c4d440dc86a2e727b83d5ff49881}{find}}(std::vector<std::shared\_ptr<T>>\&\ \_out)}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ ei\ =\ 0;\ ei\ <\ m\_entities.size();\ ++ei)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<Entity>\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83ae1671797c52e15f763380b45e841ec32}{e}}\ =\ m\_entities.at(ei);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ ci\ =\ 0;\ ci\ <\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83ae1671797c52e15f763380b45e841ec32}{e}}-\/>m\_components.size();\ ++ci)}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<Component>\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a4a8a08f09d37b73795649038408b5f33}{c}}\ =\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83ae1671797c52e15f763380b45e841ec32}{e}}-\/>m\_components.at(ci);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<T>\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83ae358efa489f58062f10dd7316b65649e}{t}}\ =\ std::dynamic\_pointer\_cast<T>(\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a4a8a08f09d37b73795649038408b5f33}{c}});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83ae358efa489f58062f10dd7316b65649e}{t}})}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_out.push\_back(\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83ae358efa489f58062f10dd7316b65649e}{t}});}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_running;\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<Entity>\ >\ m\_entities;\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ std::shared\_ptr<Keyboard>\ m\_keyboard;\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ std::shared\_ptr<Enviroment>\ m\_enviroment;\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ std::shared\_ptr<Resources>\ m\_resources;\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ std::shared\_ptr<Physics>\ m\_physics;\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ std::shared\_ptr<Camera>\ m\_camera;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ std::weak\_ptr<Core>\ m\_self;\ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ SDL\_Window*\ m\_window;\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ SDL\_GLContext\ m\_context;\ }
+\DoxyCodeLine{00093\ \ \ \ \ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !MYENGINE\_CORE\_H}}
+
+\end{DoxyCode}

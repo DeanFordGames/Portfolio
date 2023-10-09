@@ -1,0 +1,51 @@
+\hypertarget{_transform_8h_source}{}\doxysection{Transform.\+h}
+\label{_transform_8h_source}\index{src/myengine/Transform.h@{src/myengine/Transform.h}}
+\mbox{\hyperlink{_transform_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_rigid_body_8h}{RigidBody.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <rend/rend.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_transform}{Transform}}\ :\ \mbox{\hyperlink{structmyengine_1_1_component}{Component}}}
+\DoxyCodeLine{00012\ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_transform_ae1a0b5cce561bb5ef107842156ea8157}{Transform}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_transform_a29147299aceca4e04381d4e4bddd24cc}{changePosition}}(glm::vec3\ \_pos)\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_hasPhysics)\ \{\ m\_rb-\/>addImpulse(\_pos);\ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{\ m\_position\ +=\ \_pos;\ m\_dirty\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structmyengine_1_1_transform_a8cb30ceec1780590896475b2b98914e7}{getPosition}}()\ \{\ \textcolor{keywordflow}{return}\ m\_position;\ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_transform_a9eb3ca0e37d26cc015a124a4fdc35a5f}{setPosition}}(glm::vec3\ \_pos)\ \{\ m\_position\ =\ \_pos;\ m\_dirty\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_transform_ae0a3a46334bfee1e794f0a57438c6ceb}{changeRotation}}(glm::vec3\ \_rot)\ \{\ m\_rotation\ +=\ \_rot;\ m\_dirty\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structmyengine_1_1_transform_ad95ad855a0dbfd7ff63d7804d6475601}{getRotation}}()\ \{\ \textcolor{keywordflow}{return}\ m\_rotation;\ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_transform_ab59cec990eaa27a08bc27758ca11540e}{setRotaion}}(glm::vec3\ \_rot)\ \{\ m\_rotation\ =\ \_rot;\ m\_dirty\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structmyengine_1_1_transform_a9f86da4c480959c957dbd6607889e702}{getScale}}()\ \{\ \textcolor{keywordflow}{return}\ m\_scale;\ \}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_transform_a191a986188d2b408c7f88715df574a82}{setScale}}(glm::vec3\ \_s)\ \{\ m\_scale\ =\ \_s;\ m\_dirty\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_transform_a958293f8397a151a39f6e7b902f2f6b2}{changeScale}}(glm::vec3\ \_s)\ \{\ m\_scale\ +=\ \_s;\ m\_dirty\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_transform_abcdcd7a1619d60ef42cb9d345e24ecc7}{setHasPhysics}}(\textcolor{keywordtype}{bool}\ \_physics)\ \{\ m\_hasPhysics\ =\ \_physics;\ m\_rb\ =\ \mbox{\hyperlink{structmyengine_1_1_component_af409385720cc0c533e8812e8857ba161}{getEntity}}()-\/>getComponent<\mbox{\hyperlink{structmyengine_1_1_rigid_body}{RigidBody}}>();\ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ glm::mat4\ \mbox{\hyperlink{structmyengine_1_1_transform_ace8cac01a34eaed9e4011caa30d3dabd}{getModelMatrix}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ glm::vec3\ m\_position;\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ glm::vec3\ m\_rotation;\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ glm::vec3\ m\_scale;\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ glm::mat4\ m\_matrix;\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_dirty;\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_hasPhysics;\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::shared\_ptr<RigidBody>\ m\_rb;\ }
+\DoxyCodeLine{00058\ \ \ \ \ \};}
+\DoxyCodeLine{00059\ \}}
+
+\end{DoxyCode}

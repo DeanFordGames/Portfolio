@@ -1,0 +1,39 @@
+\hypertarget{_rigid_body_8h_source}{}\doxysection{Rigid\+Body.\+h}
+\label{_rigid_body_8h_source}\index{src/myengine/RigidBody.h@{src/myengine/RigidBody.h}}
+\mbox{\hyperlink{_rigid_body_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_keyboard_8h}{Keyboard.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}btBulletDynamicsCommon.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_rigid_body}{RigidBody}}\ :\ \mbox{\hyperlink{structmyengine_1_1_component}{Component}}}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_rigid_body_a8dd62902e32225a961a51e15e5453802}{RigidBody}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_rigid_body_a1ddd0e52579773c05e100330f7f54bda}{initialize}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_rigid_body_aeb17f68894c40999782e4f53544a4f55}{setMass}}(\textcolor{keywordtype}{float}\ \_mass)\ \{\ m\_mass\ =\ \_mass;\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_rigid_body_abd22ade4563fdef16db6d0390f1ebc4a}{addImpulse}}(glm::vec3\ \_impulse);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_rigid_body_a467d051e1b40e3c70b54c38a76126d5f}{addForce}}(glm::vec3\ \_force);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_rigid_body_ad5f5d0c2724e54adb752e7536faa138e}{freezePositionAxis}}(glm::vec3\ \_axis)\ \{\ m\_body-\/>setLinearFactor(btVector3(\_axis.x,\ \_axis.y,\ \_axis.z));\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_rigid_body_a41f13302963ae1ab36cdc93a59a975b8}{freezeAngularAxis}}(glm::vec3\ \_axis)\ \{\ m\_body-\/>setAngularFactor(btVector3(\_axis.x,\ \_axis.y,\ \_axis.z));\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_rigid_body_a7224992681705b8aeeda41d25c2e67e6}{onTick}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ btTransform\ m\_transform;\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ btScalar\ m\_mass;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::shared\_ptr<btRigidBody>\ m\_body;}
+\DoxyCodeLine{00054\ \ \ \ \ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \}}
+
+\end{DoxyCode}

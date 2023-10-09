@@ -1,0 +1,45 @@
+\hypertarget{_resources_8h_source}{}\doxysection{Resources.\+h}
+\label{_resources_8h_source}\index{src/myengine/Resources.h@{src/myengine/Resources.h}}
+\mbox{\hyperlink{_resources_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_resource_8h}{Resource.h}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_resources}{Resources}}}
+\DoxyCodeLine{00010\ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::shared\_ptr<T>\ \mbox{\hyperlink{structmyengine_1_1_resources_a8758836ac20eba08835ea44c2ff85539}{load}}(\textcolor{keyword}{const}\ std::string\&\ \_path)}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a83878c91171338902e0fe0fb97a8c47a}{p}};}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a83878c91171338902e0fe0fb97a8c47a}{p}}\ +=\ \textcolor{stringliteral}{"{}../"{}};}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a83878c91171338902e0fe0fb97a8c47a}{p}}\ +=\ \_path;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a865c0c0b4ab0e063e5caa3387c1a8741}{i}}\ =\ 0;\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a865c0c0b4ab0e063e5caa3387c1a8741}{i}}\ <\ m\_resources.size();\ ++\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a865c0c0b4ab0e063e5caa3387c1a8741}{i}})}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_resources.at(\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a865c0c0b4ab0e063e5caa3387c1a8741}{i}})-\/>getPath()\ ==\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a83878c91171338902e0fe0fb97a8c47a}{p}})}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::dynamic\_pointer\_cast<T>(m\_resources.at(\mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a865c0c0b4ab0e063e5caa3387c1a8741}{i}}));}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<T>\ rtn\ =\ std::make\_shared<T>();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ rtn-\/>m\_path\ =\ \mbox{\hyperlink{namespacemyengine_a61324bf06f1c2476d81da414fa2a4b83a83878c91171338902e0fe0fb97a8c47a}{p}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ rtn-\/>load();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ m\_resources.push\_back(rtn);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rtn;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<Resource>>\ m\_resources;\ }
+\DoxyCodeLine{00043\ \ \ \ \ \};}
+\DoxyCodeLine{00044\ \}}
+
+\end{DoxyCode}

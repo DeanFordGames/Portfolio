@@ -1,0 +1,38 @@
+\hypertarget{_irc_component_8h_source}{}\doxysection{Irc\+Component.\+h}
+\label{_irc_component_8h_source}\index{src/myengine/IrcComponent.h@{src/myengine/IrcComponent.h}}
+\mbox{\hyperlink{_irc_component_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ WIN32\_LEAN\_AND\_MEAN}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <windows.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <winsock2.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <ws2tcpip.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_irc_component}{IrcComponent}}\ :\ \mbox{\hyperlink{structmyengine_1_1_component}{Component}}}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_irc_component_ab7282d9ee96a987770f084760b3ed8f7}{IrcComponent}}();\ \textcolor{comment}{//Initialize\ Winsock,\ connect}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_irc_component_a4040fa29760e058dd3bde74b314ecffb}{\string~IrcComponent}}();\ \textcolor{comment}{//\ Close\ socket}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_irc_component_a8158ead9313a91fb2fb807d178483433}{onTick}}();\textcolor{comment}{//Read\ data\ into\ incoming\ buffer,\ process}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Write\ data\ from\ outgoing\ buffer}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_irc_component_ad0dd4d1e98c979357a5245287e296b02}{authenticate}}();\ \textcolor{comment}{//\ Add\ NICK\ and\ USER\ messages\ to\ outgoing}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structmyengine_1_1_irc_component_ace9ce80aa0f7a75f2c23485cc3a8f159}{disconnected}}();\ \textcolor{comment}{//A\ 0\ recv\ can\ set\ this\ flag}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ SOCKET\ m\_socket;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::vector<unsigned\ char>\ m\_incoming;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::vector<unsigned\ char>\ m\_outgoing;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_authenticated;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_disconnected;}
+\DoxyCodeLine{00031\ \ \ \ \ \};}
+\DoxyCodeLine{00032\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,149 @@
+\hypertarget{structmyengine_1_1_transform}{}\doxysection{myengine\+::Transform Struct Reference}
+\label{structmyengine_1_1_transform}\index{myengine::Transform@{myengine::Transform}}
+
+
+{\ttfamily \#include $<$Transform.\+h$>$}
+
+Inheritance diagram for myengine\+::Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structmyengine_1_1_transform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structmyengine_1_1_transform_ae1a0b5cce561bb5ef107842156ea8157}{Transform}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_transform_a29147299aceca4e04381d4e4bddd24cc}{change\+Position}} (glm\+::vec3 \+\_\+pos)
+\item 
+glm\+::vec3 \mbox{\hyperlink{structmyengine_1_1_transform_a8cb30ceec1780590896475b2b98914e7}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_transform_a9eb3ca0e37d26cc015a124a4fdc35a5f}{set\+Position}} (glm\+::vec3 \+\_\+pos)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_transform_ae0a3a46334bfee1e794f0a57438c6ceb}{change\+Rotation}} (glm\+::vec3 \+\_\+rot)
+\item 
+glm\+::vec3 \mbox{\hyperlink{structmyengine_1_1_transform_ad95ad855a0dbfd7ff63d7804d6475601}{get\+Rotation}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_transform_ab59cec990eaa27a08bc27758ca11540e}{set\+Rotaion}} (glm\+::vec3 \+\_\+rot)
+\item 
+glm\+::vec3 \mbox{\hyperlink{structmyengine_1_1_transform_a9f86da4c480959c957dbd6607889e702}{get\+Scale}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_transform_a191a986188d2b408c7f88715df574a82}{set\+Scale}} (glm\+::vec3 \+\_\+s)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_transform_a958293f8397a151a39f6e7b902f2f6b2}{change\+Scale}} (glm\+::vec3 \+\_\+s)
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_transform_abcdcd7a1619d60ef42cb9d345e24ecc7}{set\+Has\+Physics}} (bool \+\_\+physics)
+\item 
+glm\+::mat4 \mbox{\hyperlink{structmyengine_1_1_transform_ace8cac01a34eaed9e4011caa30d3dabd}{get\+Model\+Matrix}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{structmyengine_1_1_component}{myengine\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_af409385720cc0c533e8812e8857ba161}{get\+Entity}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_core}{Core}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a2b80c2d91dac8f429f6b6f6305d7c5be}{get\+Core}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_enviroment}{Enviroment}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a3b00191c809640c8c6ab526b2c946079}{get\+Enviroment}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_keyboard}{Keyboard}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a86618ca85aca087c0efa99970b5e095a}{get\+Keyboard}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_physics}{Physics}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a83297e0637f1590cdbc7c77e68e94183}{get\+Physics}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_camera}{Camera}} $>$ \mbox{\hyperlink{structmyengine_1_1_component_a3c4a94098f91b2602ce73a81d0bc9570}{get\+Camera}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structmyengine_1_1_component}{Component}} provideing the positional values for the entity 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_transform_ae1a0b5cce561bb5ef107842156ea8157}\label{structmyengine_1_1_transform_ae1a0b5cce561bb5ef107842156ea8157}} 
+\index{myengine::Transform@{myengine::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}}
+{\footnotesize\ttfamily myengine\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{structmyengine_1_1_transform}{Transform}} initalizes all the vectors and matrices 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_transform_a29147299aceca4e04381d4e4bddd24cc}\label{structmyengine_1_1_transform_a29147299aceca4e04381d4e4bddd24cc}} 
+\index{myengine::Transform@{myengine::Transform}!changePosition@{changePosition}}
+\index{changePosition@{changePosition}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{changePosition()}{changePosition()}}
+{\footnotesize\ttfamily void myengine\+::\+Transform\+::change\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_ae0a3a46334bfee1e794f0a57438c6ceb}\label{structmyengine_1_1_transform_ae0a3a46334bfee1e794f0a57438c6ceb}} 
+\index{myengine::Transform@{myengine::Transform}!changeRotation@{changeRotation}}
+\index{changeRotation@{changeRotation}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{changeRotation()}{changeRotation()}}
+{\footnotesize\ttfamily void myengine\+::\+Transform\+::change\+Rotation (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_a958293f8397a151a39f6e7b902f2f6b2}\label{structmyengine_1_1_transform_a958293f8397a151a39f6e7b902f2f6b2}} 
+\index{myengine::Transform@{myengine::Transform}!changeScale@{changeScale}}
+\index{changeScale@{changeScale}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{changeScale()}{changeScale()}}
+{\footnotesize\ttfamily void myengine\+::\+Transform\+::change\+Scale (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_ace8cac01a34eaed9e4011caa30d3dabd}\label{structmyengine_1_1_transform_ace8cac01a34eaed9e4011caa30d3dabd}} 
+\index{myengine::Transform@{myengine::Transform}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 myengine\+::\+Transform\+::get\+Model\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+creates the required model matrix for the entity \begin{DoxyReturn}{Returns}
+created model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structmyengine_1_1_transform_a8cb30ceec1780590896475b2b98914e7}\label{structmyengine_1_1_transform_a8cb30ceec1780590896475b2b98914e7}} 
+\index{myengine::Transform@{myengine::Transform}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 myengine\+::\+Transform\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_ad95ad855a0dbfd7ff63d7804d6475601}\label{structmyengine_1_1_transform_ad95ad855a0dbfd7ff63d7804d6475601}} 
+\index{myengine::Transform@{myengine::Transform}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
+{\footnotesize\ttfamily glm\+::vec3 myengine\+::\+Transform\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_a9f86da4c480959c957dbd6607889e702}\label{structmyengine_1_1_transform_a9f86da4c480959c957dbd6607889e702}} 
+\index{myengine::Transform@{myengine::Transform}!getScale@{getScale}}
+\index{getScale@{getScale}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily glm\+::vec3 myengine\+::\+Transform\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_abcdcd7a1619d60ef42cb9d345e24ecc7}\label{structmyengine_1_1_transform_abcdcd7a1619d60ef42cb9d345e24ecc7}} 
+\index{myengine::Transform@{myengine::Transform}!setHasPhysics@{setHasPhysics}}
+\index{setHasPhysics@{setHasPhysics}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{setHasPhysics()}{setHasPhysics()}}
+{\footnotesize\ttfamily void myengine\+::\+Transform\+::set\+Has\+Physics (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+physics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+sets the rigidbody and has physics 
+\begin{DoxyParams}{Parameters}
+{\em true} & if has rigidbody \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structmyengine_1_1_transform_a9eb3ca0e37d26cc015a124a4fdc35a5f}\label{structmyengine_1_1_transform_a9eb3ca0e37d26cc015a124a4fdc35a5f}} 
+\index{myengine::Transform@{myengine::Transform}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void myengine\+::\+Transform\+::set\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_ab59cec990eaa27a08bc27758ca11540e}\label{structmyengine_1_1_transform_ab59cec990eaa27a08bc27758ca11540e}} 
+\index{myengine::Transform@{myengine::Transform}!setRotaion@{setRotaion}}
+\index{setRotaion@{setRotaion}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{setRotaion()}{setRotaion()}}
+{\footnotesize\ttfamily void myengine\+::\+Transform\+::set\+Rotaion (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_transform_a191a986188d2b408c7f88715df574a82}\label{structmyengine_1_1_transform_a191a986188d2b408c7f88715df574a82}} 
+\index{myengine::Transform@{myengine::Transform}!setScale@{setScale}}
+\index{setScale@{setScale}!myengine::Transform@{myengine::Transform}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void myengine\+::\+Transform\+::set\+Scale (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/myengine/\mbox{\hyperlink{_transform_8h}{Transform.\+h}}\item 
+src/myengine/\mbox{\hyperlink{_transform_8cpp}{Transform.\+cpp}}\end{DoxyCompactItemize}

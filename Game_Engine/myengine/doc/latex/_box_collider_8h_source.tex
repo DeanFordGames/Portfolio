@@ -1,0 +1,39 @@
+\hypertarget{_box_collider_8h_source}{}\doxysection{Box\+Collider.\+h}
+\label{_box_collider_8h_source}\index{src/myengine/BoxCollider.h@{src/myengine/BoxCollider.h}}
+\mbox{\hyperlink{_box_collider_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <rend/rend.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}btBulletDynamicsCommon.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_box_collider}{BoxCollider}}\ :\ \mbox{\hyperlink{structmyengine_1_1_component}{Component}}}
+\DoxyCodeLine{00012\ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_box_collider_a17bd85a80fcb6ce7c983a9e1e55b2605}{BoxCollider}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_box_collider_ae07e0537cd3063bc1d3cbbe370c41785}{initialize}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::shared\_ptr<btCollisionShape>\ \mbox{\hyperlink{structmyengine_1_1_box_collider_a4ea9f0ec86540dd2478e7c1c16f3cdf6}{getCollider}}()\ \{\ \textcolor{keywordflow}{return}\ m\_collider;\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structmyengine_1_1_box_collider_aca9836aa31f4c88b132c2a0b5dcab65f}{getSize}}()\ \{\ \textcolor{keywordflow}{return}\ m\_size;\ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_box_collider_a1e5e884519eea671e9af3e930096ac1f}{setSize}}(glm::vec3\ size)\ \{\ m\_size\ =\ size;\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_box_collider_af72011cb4b3d5eb7c4c8685ae0692e35}{changeSize}}(glm::vec3\ size)\ \{\ m\_size\ +=\ size;\ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structmyengine_1_1_box_collider_ab7f6bf671124dd853a201fa916f16a0c}{getOffset}}()\ \{\ \textcolor{keywordflow}{return}\ m\_offset;\ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_box_collider_a7970fa54ad38785b48d86d4a76669990}{setOffset}}(glm::vec3\ offset)\ \{\ m\_offset\ =\ offset;\ \}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_box_collider_a9eee44a6813638330f912d592c3fd322}{changeOffset}}(glm::vec3\ offset)\ \{\ m\_offset\ +=\ offset;\ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ glm::vec3\ m\_size;\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ glm::vec3\ m\_offset;\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ std::shared\_ptr<btCollisionShape>\ m\_collider;}
+\DoxyCodeLine{00039\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \}}
+
+\end{DoxyCode}

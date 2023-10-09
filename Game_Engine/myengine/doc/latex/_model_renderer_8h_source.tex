@@ -1,0 +1,31 @@
+\hypertarget{_model_renderer_8h_source}{}\doxysection{Model\+Renderer.\+h}
+\label{_model_renderer_8h_source}\index{src/myengine/ModelRenderer.h@{src/myengine/ModelRenderer.h}}
+\mbox{\hyperlink{_model_renderer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <rend/rend.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{struct\ }Model;}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{struct\ }Texture;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_model_renderer}{ModelRenderer}}\ :\ \mbox{\hyperlink{structmyengine_1_1_component}{Component}}}
+\DoxyCodeLine{00015\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_model_renderer_acb7fa070f3b9a36a67bee547455127ff}{ModelRenderer}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_model_renderer_a1da34e52b1730dfc0f6546a4aea4f4c3}{setModel}}(std::shared\_ptr<Model>\ \_model);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_model_renderer_a34d44795e32d45a009cfed9a8f986f37}{setTexture}}(std::shared\_ptr<Texture>\ \_texture);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ rend::Shader\ m\_shader;\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::shared\_ptr<Model>\ m\_model;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::shared\_ptr<Texture>\ m\_texture;\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ onDisplay();}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ \}}
+
+\end{DoxyCode}

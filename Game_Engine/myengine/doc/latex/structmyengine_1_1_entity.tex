@@ -1,0 +1,110 @@
+\hypertarget{structmyengine_1_1_entity}{}\doxysection{myengine\+::Entity Struct Reference}
+\label{structmyengine_1_1_entity}\index{myengine::Entity@{myengine::Entity}}
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{structmyengine_1_1_entity_a514e500995795a71aeea15f447856b9e}{add\+Component}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{structmyengine_1_1_entity_a3c65d09e508ebf8359788e720a7ca0c7}{get\+Component}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_core}{Core}} $>$ \mbox{\hyperlink{structmyengine_1_1_entity_a1d39705dcf1bb5022b03d52f7622da31}{get\+Core}} ()
+\item 
+\mbox{\hyperlink{structmyengine_1_1_entity_a5d604268b8ba4244f61bb94f94cd733e}{Entity}} ()
+\item 
+bool \mbox{\hyperlink{structmyengine_1_1_entity_acb10a60e6ad1150345288a6993d2b14f}{alive}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_entity_ab0a125079867c099760260086386f4c2}{tick}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_entity_a314cad9c9602f79c668048ec7e544d44}{display}} ()
+\item 
+void \mbox{\hyperlink{structmyengine_1_1_entity_add809b745be8e10f0d66a48210ab295f}{kill}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmyengine_1_1_entity_acd0789873af2006e142a579250891ce8}{Core}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structmyengine_1_1_entity}{Entity}} struct for all the objects in the scene 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_entity_a5d604268b8ba4244f61bb94f94cd733e}\label{structmyengine_1_1_entity_a5d604268b8ba4244f61bb94f94cd733e}} 
+\index{myengine::Entity@{myengine::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily myengine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{structmyengine_1_1_entity}{Entity}} initalize entity as alive 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_entity_a514e500995795a71aeea15f447856b9e}\label{structmyengine_1_1_entity_a514e500995795a71aeea15f447856b9e}} 
+\index{myengine::Entity@{myengine::Entity}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$ T $>$ myengine\+::\+Entity\+::add\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+add\+Component adds a component to component vector of typename T \begin{DoxyReturn}{Returns}
+returns the added component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structmyengine_1_1_entity_acb10a60e6ad1150345288a6993d2b14f}\label{structmyengine_1_1_entity_acb10a60e6ad1150345288a6993d2b14f}} 
+\index{myengine::Entity@{myengine::Entity}!alive@{alive}}
+\index{alive@{alive}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{alive()}{alive()}}
+{\footnotesize\ttfamily bool myengine\+::\+Entity\+::alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_entity_a314cad9c9602f79c668048ec7e544d44}\label{structmyengine_1_1_entity_a314cad9c9602f79c668048ec7e544d44}} 
+\index{myengine::Entity@{myengine::Entity}!display@{display}}
+\index{display@{display}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void myengine\+::\+Entity\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+display update graphics function for all entities \mbox{\Hypertarget{structmyengine_1_1_entity_a3c65d09e508ebf8359788e720a7ca0c7}\label{structmyengine_1_1_entity_a3c65d09e508ebf8359788e720a7ca0c7}} 
+\index{myengine::Entity@{myengine::Entity}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$ T $>$ myengine\+::\+Entity\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get\+Component searches through all components in entity \begin{DoxyReturn}{Returns}
+returns the required component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structmyengine_1_1_entity_a1d39705dcf1bb5022b03d52f7622da31}\label{structmyengine_1_1_entity_a1d39705dcf1bb5022b03d52f7622da31}} 
+\index{myengine::Entity@{myengine::Entity}!getCore@{getCore}}
+\index{getCore@{getCore}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{getCore()}{getCore()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmyengine_1_1_core}{Core}} $>$ myengine\+::\+Entity\+::get\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structmyengine_1_1_entity_add809b745be8e10f0d66a48210ab295f}\label{structmyengine_1_1_entity_add809b745be8e10f0d66a48210ab295f}} 
+\index{myengine::Entity@{myengine::Entity}!kill@{kill}}
+\index{kill@{kill}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily void myengine\+::\+Entity\+::kill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+kill clean up entity when killed \mbox{\Hypertarget{structmyengine_1_1_entity_ab0a125079867c099760260086386f4c2}\label{structmyengine_1_1_entity_ab0a125079867c099760260086386f4c2}} 
+\index{myengine::Entity@{myengine::Entity}!tick@{tick}}
+\index{tick@{tick}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void myengine\+::\+Entity\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+tick update function for all entities 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structmyengine_1_1_entity_acd0789873af2006e142a579250891ce8}\label{structmyengine_1_1_entity_acd0789873af2006e142a579250891ce8}} 
+\index{myengine::Entity@{myengine::Entity}!Core@{Core}}
+\index{Core@{Core}!myengine::Entity@{myengine::Entity}}
+\doxysubsubsection{\texorpdfstring{Core}{Core}}
+{\footnotesize\ttfamily friend struct \mbox{\hyperlink{structmyengine_1_1_core}{Core}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/myengine/\mbox{\hyperlink{_entity_8h}{Entity.\+h}}\item 
+src/myengine/\mbox{\hyperlink{_entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}

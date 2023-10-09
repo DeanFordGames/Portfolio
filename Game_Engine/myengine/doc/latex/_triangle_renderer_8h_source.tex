@@ -1,0 +1,28 @@
+\hypertarget{_triangle_renderer_8h_source}{}\doxysection{Triangle\+Renderer.\+h}
+\label{_triangle_renderer_8h_source}\index{src/myengine/TriangleRenderer.h@{src/myengine/TriangleRenderer.h}}
+\mbox{\hyperlink{_triangle_renderer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<rend/rend.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{struct\ }Texture;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_triangle_renderer}{TriangleRenderer}}\ :\ \mbox{\hyperlink{structmyengine_1_1_component}{Component}}}
+\DoxyCodeLine{00013\ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_triangle_renderer_a5b8c8b84f420ef262c0409a6fe5340b4}{TriangleRenderer}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_triangle_renderer_a6c560c11d78b526d9778129225276dc5}{setTexture}}(std::shared\_ptr<Texture>\ \_texture);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ rend::Mesh\ m\_mesh;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ rend::Shader\ m\_shader;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::shared\_ptr<Texture>\ m\_texture;\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ onDisplay();}
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \}}
+
+\end{DoxyCode}

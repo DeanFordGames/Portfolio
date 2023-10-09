@@ -1,0 +1,37 @@
+\hypertarget{_physics_8h_source}{}\doxysection{Physics.\+h}
+\label{_physics_8h_source}\index{src/myengine/Physics.h@{src/myengine/Physics.h}}
+\mbox{\hyperlink{_physics_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}btBulletDynamicsCommon.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <rend/rend.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemyengine}{myengine}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmyengine_1_1_physics}{Physics}}}
+\DoxyCodeLine{00011\ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ Physics\ initializes\ the\ physics\ world}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmyengine_1_1_physics_ab0bcf555d04d5d05ddb7e6f5985dee33}{Physics}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmyengine_1_1_physics_a3d9c3e89a6b84744e65d6fbc9b52366a}{tick}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ convertVectorTobt\ converts\ a\ vec3\ to\ btVector\ }}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ btVector3\ \mbox{\hyperlink{structmyengine_1_1_physics_aa2784ed95bccc89d5a6652d0d3dbc3b2}{convertVectorTobt}}(glm::vec3\ \_vec);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ convertbtToVector\ converts\ a\ btVector\ to\ vec3}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structmyengine_1_1_physics_a4e7fc6102a585536ccec76c9cb3f0d88}{convertbtToVector}}(btVector3\ \_bt);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::shared\_ptr<btDiscreteDynamicsWorld>\ \mbox{\hyperlink{structmyengine_1_1_physics_a10aa7d67cb8a6de4af58352e4224e984}{m\_world}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+\DoxyCodeLine{00031\ \}}
+
+\end{DoxyCode}
