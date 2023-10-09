@@ -1,0 +1,6 @@
+CONTROLS
+A and D to move and SPACE to jump.
+
+The game engine with cmake file is in myengine folder.
+The .git folder is in the myengine folder as well. If you cant see it turn on hidden items.
+The game is in GameBuild/build.

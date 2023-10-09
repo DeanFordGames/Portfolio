@@ -1,0 +1,15 @@
+﻿  Application.cpp
+e:\uni labs\physicsforgames\physicsforgamesassignment\pfg-startproject\pfg-startproject\src\application.cpp(167): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Camera.cpp
+  DynamicObject.cpp
+  GameObject.cpp
+  Input.cpp
+  KinematicsObject.cpp
+  Main.cpp
+  Material.cpp
+  Mesh.cpp
+  Scene.cpp
+  Utility.cpp
+  Generating Code...
+  glew.c
+  PFG-StartProject.vcxproj -> E:\UNI LABS\PhysicsForGames\PhysicsForGamesAssignment\PFG-StartProject\PFG-StartProject\build\Debug\PFG-StartProject.exe
